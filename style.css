@@ -1,0 +1,431 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body {
+height: 100%;
+background: #000;
+color: #FFFFFF;
+
+}
+
+[class*="_container"] {
+  max-width: 1028px;
+  margin: 0px auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+ 
+  max-height: 104px;
+  margin-top: 42px;
+
+}
+.header__menu {
+ flex:1 1 auto;
+ justify-content: center;
+}
+.menu {
+  display: flex;
+ 
+}
+.menu__list {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+.menu__item {
+  padding: 10px 30px;
+}
+
+.menu__item:hover{
+
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+.menu__item:hover a {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.menu__link {
+  text-decoration: none;
+  color: white;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  width: 64px;
+  height: 28px;
+}
+
+.menu__link:hover {
+ 
+}
+
+.main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.hero {
+  margin-top: 130px;
+  
+}
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.hero__title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 110px;
+  /* or 138% */
+  
+  text-align: center;
+  
+  /* White */
+  
+  color: #FFFFFF;
+}
+.hero__text {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 14px;
+}
+.geo__type {
+  margin-top: 65px;
+}
+.geo__container {
+  
+}
+
+.geo__flexer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.geo__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+}
+.geo__title {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+
+
+  /* White */
+
+  color: #FFFFFF;
+}
+.geo__category {
+  margin-top: 24px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  /* identical to box height */
+
+
+  /* White */
+
+  color: #FFFFFF;
+}
+.geo__text {
+  /* Body 18px */
+
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;    justify-content: flex-end;
+  line-height: 28px;
+  /* or 156% */
+  margin-right: 124px;
+  margin-top: 24px;
+  /* White 50 */
+
+  color: rgba(255, 255, 255, 0.5);
+}
+.geo__button {
+  width: 160px;
+  height: 44px;
+  display: block;
+  padding: 8px 30px;  
+  background: none;
+  color:#FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  margin-top: 16px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.geo__img {
+  display: flex;
+  position: relative;
+}
+
+.geo__img__ellipse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+}
+.geo__img__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+}
+
+.gallery {
+  margin-top: 65px;
+}
+.gallery__container {
+}
+.gallery__title {
+  font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+/* identical to box height */
+margin-bottom: 16px;
+
+/* White */
+
+color: #FFFFFF;
+}
+/*
+.gallery__images {
+  display: block;
+  position: relative;
+  font-size: 0;
+}
+.gallery__image:nth-child(2) {
+  top:0;
+  position: absolute;
+  margin-bottom: 24px;
+}
+
+.gallery__image:last-child {
+  position: absolute;
+  bottom: 0;
+}
+
+.gallery__image:first-child {
+  margin-right: 24px;
+}
+*/
+
+.gallery__images {
+  display: flex;
+}
+.gallery__images_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 24px;
+}
+.gallery__image {
+}
+
+
+
+.gallery__text {
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+  
+  
+  /* White 50 */
+  
+  color: rgba(255, 255, 255, 0.5);
+  
+}
+
+.gallery__text__column {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  justify-content: flex-end;
+  margin-left: 75px;
+}
+
+.gallery_body {
+  display: flex;
+}
+
+.geo__video {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1 1 100%;
+}
+.geo__img {
+
+}
+
+.hillview__banner {
+  margin-top: 65px;
+}
+
+.hillview__container {
+  display: flex;
+}
+
+.hillview__image {
+  position: relative;
+}
+.hillview__img {
+
+}
+.hillview__title {
+  position: absolute;
+  top: 56px;
+  left: 274px;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+
+color: #FFFFFF;
+}
+.hillview_subtitle {
+  position: absolute;
+  top: 93px;
+  left: 274px;
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+}
+
+.other {
+  margin-top: 65px;
+}
+
+.other__title {
+  /* Subtitle 20px */
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 54px;
+
+/* White */
+
+color: #FFFFFF;
+}
+
+.other__container {
+}
+.other__images {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+.other__img {
+  position: relative;
+  display: flex;
+  justify-content: left;
+}
+.other__img__title {
+  /* SubHeader 24px */
+
+  position: absolute;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+
+/* White */
+
+color: #FFFFFF;
+top: 110px;
+left: 32.22px;
+}
+.other__img__text {
+  width: 267.55px;
+  position: absolute;
+  font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+top: 152px;
+left: 32.22px;
+/* White 50 */
+
+color: rgba(255, 255, 255, 0.5);
+
+}
+
+.footer__copyright {
+ /* Body 18px */
+
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+/* identical to box height, or 156% */
+
+text-align: center;
+
+/* White 50 */
+
+color: rgba(255, 255, 255, 0.5);
+}
+
+.footer {
+  margin-top: 65px;
+  margin-bottom: 135px;
+}
